@@ -58,7 +58,7 @@ To fix this bug, we declare an int variable temp to store the index in the array
 
 ### Part 2 - Researching Commands
 We try -type command option for the find command. -type command can be used for searching and locating files and directories within a specified directory hierarchy.<br />
-In the website https://man7.org/linux/man-pages/man1/find.1.html state that in -type command option, d is for directory, and f is for regular file. <br />
+In the website [link](https://man7.org/linux/man-pages/man1/find.1.html) state that in -type command option, d is for directory, and f is for regular file. <br />
 <img src="example1.png" alt="drawing" width="600"/> <br />
 
 We can use -type d to search all the directories inside a directory. For example, if I type find technical/ -type d, the terminal will output all the directories inside technical. 
@@ -99,7 +99,7 @@ technical/911report/chapter-9.txt
 technical/911report/preface.txt
 ```
 <br />
-In the website https://man7.org/linux/man-pages/man1/find.1.html states that -size n is for file uses less than, more than or exactly n unit for space, rounding up. for unit, 'b' is for 512-byte blocks, 'c' is for bytes, 'w' is for two-byte words, 'k' for kibibytes, 'M' for mebibytes, and 'G' for gibibytes. <br />
+In the website [link](https://man7.org/linux/man-pages/man1/find.1.html) states that -size n is for file uses less than, more than or exactly n unit for space, rounding up. for unit, 'b' is for 512-byte blocks, 'c' is for bytes, 'w' is for two-byte words, 'k' for kibibytes, 'M' for mebibytes, and 'G' for gibibytes. <br />
 <img src="example2.png" alt="drawing" width="600"/> <br />
 We tried -size command option for the find command. -size command can be used to search for files based on their size.<br />
 We can use -size +300k to search all the files that have a size larger than 300k inside a directory. For example, if I type find technical/ -size +300k, the terminal will output all the files that have a size larger than 300k inside technical/. The output is shown below:
@@ -122,7 +122,7 @@ $ find technical/911report/chapter-1.txt -size +1M
 
 ```
 <br />
-In the website https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/ states that find type find into the command line to tack down a particular file by its name or extension. <br />
+In the website [link](https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/) states that find type find into the command line to tack down a particular file by its name or extension. <br />
 <img src="example3.png" alt="drawing" width="600"/> <br />
 We tried -name command option for the find command. -name command can be used to search for files or directories based on their names. <br />
 We can use -type d -name "d*" to search all the directories that have a name start with the letter d inside a directory. For example, if I type find technical/ -type d -name "9*", the terminal will output the directories that have a name start with 9. The output is shown below:
@@ -145,7 +145,7 @@ technical/911report/chapter-13.4.txt
 technical/911report/chapter-13.5.txt
 ```
 
-In the website https://man7.org/linux/man-pages/man1/find.1.html states that -mmin n is for files' data was last modified less than, more than, or exactly n minutes ago. <br />
+In the website [link](https://man7.org/linux/man-pages/man1/find.1.html) states that -mmin n is for files' data was last modified less than, more than, or exactly n minutes ago. <br />
 <img src="example4.png" alt="drawing" width="600"/> <br />
 We tried -mmin n command option for search files or directories was last modified less than, more than, or exactly n minutes ago. <br />
 We can use find -type d -mmin -100 to search all the directories that were modified less than 100 minutes ago. Let's say I add a new folder name Hello in technical/, and I type find technical/ -type d -mmin -100, the terminal will output the directories that I modified less than 100 minutes ago. The output is show below:
