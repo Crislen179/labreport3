@@ -60,7 +60,11 @@ To fix this bug, we declare an int variable temp to store the index in the array
 By searching "find command-line options" in Google, we find a website that talks about the find command-line option and the URL of the website is https://man7.org/linux/man-pages/man1/find.1.html
 <br />
 We try -type command option for the find command. -type command can be used for searching and locating files and directories within a specified directory hierarchy.<br />
-We can use -type d to search all the directories inside a directory. For example, if I type find technical/ -type d, the terminal will output all the directories inside technical. The output is shown below:
+In the website https://man7.org/linux/man-pages/man1/find.1.html state that in -type command option, d is for directory, and f is for regular file. <br />
+
+
+We can use -type d to search all the directories inside a directory. For example, if I type find technical/ -type d, the terminal will output all the directories inside technical. 
+The output is shown below:
 ```
 $ find technical/ -type d
 technical/
