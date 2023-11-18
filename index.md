@@ -145,6 +145,8 @@ technical/911report/chapter-13.4.txt
 technical/911report/chapter-13.5.txt
 ```
 
+In the website https://man7.org/linux/man-pages/man1/find.1.html states that -mmin n is for files' data was last modified less than, more than, or exactly n minutes ago. <br />
+<img src="example4.png" alt="drawing" width="600"/> <br />
 We tried -mmin n command option for search files or directories was last modified less than, more than, or exactly n minutes ago. <br />
 We can use find -type d -mmin -100 to search all the directories that were modified less than 100 minutes ago. Let's say I add a new folder name Hello in technical/, and I type find technical/ -type d -mmin -100, the terminal will output the directories that I modified less than 100 minutes ago. The output is show below:
 ```
